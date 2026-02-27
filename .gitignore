@@ -1,0 +1,31 @@
+# --- Środowisko wirtualne ---
+.venv/
+venv/
+ENV/
+
+# --- Python (pliki tymczasowe) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Dane (Data Science) ---
+# Często ignorujemy raw_data, bo są za duże na Git.
+# Jeśli chcesz trzymać tam małe pliki .csv, usuń poniższe linie.
+#data/raw_data/
+#data/clean_data/
+# Jeśli chcesz ignorować wszystko w data poza strukturą:
+data/*
+
+
+# --- Konfiguracja i Sekrety ---
+.env
+.DS_Store
+
+# --- Notatniki (opcjonalnie) ---
+# Jeśli nie chcesz śmieci w logach Gita, warto czasem ignorować autozapisy jupyter
+.ipynb_checkpoints
+
+todo.md

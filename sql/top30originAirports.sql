@@ -1,0 +1,6 @@
+SELECT "Origin", COUNT(*) 
+FROM flights_2024 
+WHERE "Origin" IS NOT NULL 
+GROUP BY "Origin" 
+ORDER BY COUNT(*) DESC 
+LIMIT 30
